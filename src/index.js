@@ -20,9 +20,12 @@ class App extends Component {
   render(){
     return ( 
       <React.Fragment>
-        {this.state.pokemonList.map( pokemon => (
-          <PokemonCard url={ pokemon.url } name={ pokemon.name }></PokemonCard>
-        ))}
+        <div className="grid-container">
+          {this.state.pokemonList.map( pokemon => (
+            <PokemonCard url={ pokemon.url } name={ pokemon.name }></PokemonCard>
+          ))}
+        </div>
+
       </React.Fragment>
 
     )
